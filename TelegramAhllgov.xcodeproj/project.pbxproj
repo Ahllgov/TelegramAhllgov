@@ -14,6 +14,14 @@
 		70FF5D5A26DD0D9600825CC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70FF5D5926DD0D9600825CC2 /* Assets.xcassets */; };
 		70FF5D5D26DD0D9600825CC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70FF5D5C26DD0D9600825CC2 /* Preview Assets.xcassets */; };
 		70FF5D6026DD0D9600825CC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70FF5D5E26DD0D9600825CC2 /* LaunchScreen.storyboard */; };
+		70FF5D6B26DD0DDF00825CC2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF5D6A26DD0DDF00825CC2 /* User.swift */; };
+		70FF5D6D26DD0DE600825CC2 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF5D6C26DD0DE600825CC2 /* Setting.swift */; };
+		70FF5D6F26DD0DFB00825CC2 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF5D6E26DD0DFB00825CC2 /* UserViewModel.swift */; };
+		70FF5D7126DD0E0400825CC2 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF5D7026DD0E0400825CC2 /* SettingViewModel.swift */; };
+		70FF5D7326DD0E1000825CC2 /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF5D7226DD0E1000825CC2 /* ChatsView.swift */; };
+		70FF5D7526DD0E1600825CC2 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF5D7426DD0E1600825CC2 /* ItemView.swift */; };
+		70FF5D7726DD0E2300825CC2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF5D7626DD0E2300825CC2 /* SettingsView.swift */; };
+		70FF5D7926DD0E2D00825CC2 /* SettingGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF5D7826DD0E2D00825CC2 /* SettingGroupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		70FF5D5C26DD0D9600825CC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		70FF5D5F26DD0D9600825CC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70FF5D6126DD0D9600825CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70FF5D6A26DD0DDF00825CC2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		70FF5D6C26DD0DE600825CC2 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		70FF5D6E26DD0DFB00825CC2 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		70FF5D7026DD0E0400825CC2 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		70FF5D7226DD0E1000825CC2 /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
+		70FF5D7426DD0E1600825CC2 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		70FF5D7626DD0E2300825CC2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		70FF5D7826DD0E2D00825CC2 /* SettingGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingGroupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,9 @@
 		70FF5D4F26DD0D9500825CC2 /* TelegramAhllgov */ = {
 			isa = PBXGroup;
 			children = (
+				70FF5D6926DD0DD100825CC2 /* Model */,
+				70FF5D6826DD0DCB00825CC2 /* ViewModel */,
+				70FF5D6726DD0DC400825CC2 /* View */,
 				70FF5D5026DD0D9500825CC2 /* AppDelegate.swift */,
 				70FF5D5226DD0D9500825CC2 /* SceneDelegate.swift */,
 				70FF5D5426DD0D9500825CC2 /* ContentView.swift */,
@@ -76,6 +95,35 @@
 				70FF5D5C26DD0D9600825CC2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		70FF5D6726DD0DC400825CC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				70FF5D7226DD0E1000825CC2 /* ChatsView.swift */,
+				70FF5D7426DD0E1600825CC2 /* ItemView.swift */,
+				70FF5D7626DD0E2300825CC2 /* SettingsView.swift */,
+				70FF5D7826DD0E2D00825CC2 /* SettingGroupView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		70FF5D6826DD0DCB00825CC2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				70FF5D6E26DD0DFB00825CC2 /* UserViewModel.swift */,
+				70FF5D7026DD0E0400825CC2 /* SettingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		70FF5D6926DD0DD100825CC2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				70FF5D6A26DD0DDF00825CC2 /* User.swift */,
+				70FF5D6C26DD0DE600825CC2 /* Setting.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +198,16 @@
 			files = (
 				70FF5D5126DD0D9500825CC2 /* AppDelegate.swift in Sources */,
 				70FF5D5326DD0D9500825CC2 /* SceneDelegate.swift in Sources */,
+				70FF5D6D26DD0DE600825CC2 /* Setting.swift in Sources */,
+				70FF5D7926DD0E2D00825CC2 /* SettingGroupView.swift in Sources */,
+				70FF5D7526DD0E1600825CC2 /* ItemView.swift in Sources */,
+				70FF5D7126DD0E0400825CC2 /* SettingViewModel.swift in Sources */,
 				70FF5D5826DD0D9500825CC2 /* TelegramAhllgov.xcdatamodeld in Sources */,
+				70FF5D6B26DD0DDF00825CC2 /* User.swift in Sources */,
+				70FF5D7326DD0E1000825CC2 /* ChatsView.swift in Sources */,
+				70FF5D6F26DD0DFB00825CC2 /* UserViewModel.swift in Sources */,
 				70FF5D5526DD0D9500825CC2 /* ContentView.swift in Sources */,
+				70FF5D7726DD0E2300825CC2 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
