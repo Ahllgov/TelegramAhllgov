@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7097126526E38AC100B93479 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097126426E38AC000B93479 /* ContactsView.swift */; };
+		7097126726E38EB400B93479 /* ItemViewContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097126626E38EB400B93479 /* ItemViewContacts.swift */; };
 		70FF5D5126DD0D9500825CC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF5D5026DD0D9500825CC2 /* AppDelegate.swift */; };
 		70FF5D5326DD0D9500825CC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF5D5226DD0D9500825CC2 /* SceneDelegate.swift */; };
 		70FF5D5526DD0D9500825CC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF5D5426DD0D9500825CC2 /* ContentView.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7097126426E38AC000B93479 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		7097126626E38EB400B93479 /* ItemViewContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewContacts.swift; sourceTree = "<group>"; };
 		70FF5D4D26DD0D9500825CC2 /* TelegramAhllgov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelegramAhllgov.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70FF5D5026DD0D9500825CC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70FF5D5226DD0D9500825CC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				70FF5D7426DD0E1600825CC2 /* ItemView.swift */,
 				70FF5D7626DD0E2300825CC2 /* SettingsView.swift */,
 				70FF5D7826DD0E2D00825CC2 /* SettingGroupView.swift */,
+				7097126426E38AC000B93479 /* ContactsView.swift */,
+				7097126626E38EB400B93479 /* ItemViewContacts.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,6 +204,7 @@
 			files = (
 				70FF5D5126DD0D9500825CC2 /* AppDelegate.swift in Sources */,
 				70FF5D5326DD0D9500825CC2 /* SceneDelegate.swift in Sources */,
+				7097126726E38EB400B93479 /* ItemViewContacts.swift in Sources */,
 				70FF5D6D26DD0DE600825CC2 /* Setting.swift in Sources */,
 				70FF5D7926DD0E2D00825CC2 /* SettingGroupView.swift in Sources */,
 				70FF5D7526DD0E1600825CC2 /* ItemView.swift in Sources */,
@@ -206,6 +213,7 @@
 				70FF5D6B26DD0DDF00825CC2 /* User.swift in Sources */,
 				70FF5D7326DD0E1000825CC2 /* ChatsView.swift in Sources */,
 				70FF5D6F26DD0DFB00825CC2 /* UserViewModel.swift in Sources */,
+				7097126526E38AC100B93479 /* ContactsView.swift in Sources */,
 				70FF5D5526DD0D9500825CC2 /* ContentView.swift in Sources */,
 				70FF5D7726DD0E2300825CC2 /* SettingsView.swift in Sources */,
 			);

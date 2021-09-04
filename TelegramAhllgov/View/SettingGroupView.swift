@@ -9,18 +9,18 @@ import SwiftUI
 
 struct SettingGroupView: View {
     @Binding var group: Setting
-    @Binding var groups: [Setting]
     
     var body: some View {
         HStack{
-            RoundedRectangle(cornerRadius: 10)
-                .frame(width: 35, height: 35)
-                .foregroundColor(.blue.opacity(0.3))
-                .background(Image(systemName: group.picture)
-                                .font(.system(size: 20))
-                                .foregroundColor(.black))
+            Image(systemName: group.picture)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 20, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .foregroundColor(.white)
+                .background(RoundedRectangle(cornerRadius: 5).frame(width: 30, height: 30).foregroundColor(Color("\(group.color)")))
             Text("\(group.name)")
                 .foregroundColor(.black)
+                .padding(.horizontal, 10)
             Spacer()
         }
     }

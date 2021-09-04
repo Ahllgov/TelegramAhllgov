@@ -12,5 +12,6 @@ struct Setting: Identifiable {
         var id = UUID().uuidString
         var name: String
         var picture: String
+        var color: String
     
 }

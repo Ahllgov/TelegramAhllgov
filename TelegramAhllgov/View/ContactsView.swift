@@ -1,13 +1,13 @@
 //
-//  ChatsView.swift
+//  ContactsView.swift
 //  TelegramAhllgov
 //
-//  Created by Магомед Ахильгов on 30.08.2021.
+//  Created by Магомед Ахильгов on 04.09.2021.
 //
 
 import SwiftUI
 
-struct ChatsView: View {
+struct ContactsView: View {
     
     @State var showSearch = true
     @State var searchChats = ""
@@ -19,24 +19,26 @@ struct ChatsView: View {
             HStack {
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                     Text("Edit")
+                        .foregroundColor(Color.clear)
                 })
                 Spacer()
-                Text("Chats")
+                Text("Contacts")
                     .font(.system(size: 23))
                     .fontWeight(.bold)
                 Spacer()
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Image(systemName: "square.and.pencil")
+                    Image(systemName: "plus")
+                        .font(.system(size: 25))
                 })
             }
             .padding()
             //SearchField
             if showSearch == true {
-                HStack(alignment: .center) {
+                HStack {
                     Image(systemName: "magnifyingglass")
                         .font(.system(size: 23, weight: .bold))
                         .foregroundColor(.gray)
-                    TextField("Search chats or people", text: $searchChats)
+                    TextField("Search", text: $searchChats)
                         .foregroundColor(Color.black)
                 }
                 .padding()
@@ -48,7 +50,7 @@ struct ChatsView: View {
                 LazyVStack(alignment: .leading, spacing: 0, content: {
                     ForEach(userData.items){ item in
                         
-                        ItemView(item: $userData.items[getIndex(item: item)],items: $userData.items)
+                        ItemViewContacts(item: $userData.items[getIndex(item: item)],items: $userData.items)
                         
                     }
                 })
@@ -63,9 +65,8 @@ struct ChatsView: View {
     }
 }
 
-
-struct ChatsView_Previews: PreviewProvider {
+struct ContactsView_Previews: PreviewProvider {
     static var previews: some View {
-        ChatsView()
+        ContactsView()
     }
 }

@@ -12,56 +12,54 @@ struct SettingsView: View {
     @StateObject var settingsData = SettingViewModel()
     
     var body: some View {
-        VStack {
-            HStack(alignment: .top) {
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("Edit")
-                        .foregroundColor(Color.white)
-                })
-                Spacer()
-                VStack {
-                    Image(systemName: "person.crop.circle")
-                        .font(.system(size: 100))
-                    Text("My name")
-                        .font(.system(size: 25))
-                        .fontWeight(.bold)
-                    Text("8 800 555 35 55")
-                        .foregroundColor(.gray)
-                        .lineLimit(1)
-                        .scaledToFill()
-                        .padding(.top,1)
-                    Text("@ahllgov")
-                        .foregroundColor(.gray)
-                }
-                Spacer()
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("Edit")
-                })
-            }
-            .padding(.horizontal)
-            Spacer()
-            List{
-                Section(header: Text("User Staff").font(.system(.caption))){
-                    ForEach(settingsData.groupFirst){ gr in
-                        
-                        SettingGroupView(group: $settingsData.groupFirst[getIndex(item: gr)],groups: $settingsData.groupFirst)
+            VStack {
+                HStack(alignment: .top) {
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Text("Edit")
+                            .foregroundColor(Color.clear)
+                    })
+                    Spacer()
+                    
+                    VStack {
+                        Image(systemName: "person.crop.circle")
+                            .font(.system(size: 100))
+                        Text("My name")
+                            .font(.system(size: 25))
+                            .fontWeight(.bold)
+                        Text("8 800 555 35 55")
+                            .foregroundColor(.gray)
+                            .lineLimit(1)
+                            .scaledToFill()
+                            .padding(.top,1)
+                        Text("@ahllgov")
+                            .foregroundColor(.gray)
                     }
+                    Spacer()
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Text("Edit")
+                    })
                 }
-                Section(header: Text("Telegram Settings").font(.system(.caption))){
-                    ForEach(settingsData.groupSecond){ gr in
-                        
-                        SettingGroupView(group: $settingsData.groupSecond[getIndex(item: gr)],groups: $settingsData.groupSecond)
+                .padding(.horizontal)
+                List{
+                    Section(header: Text("header").font(.system(.caption)).foregroundColor(.clear)) {
+                        ForEach(settingsData.groupFirst.indices, id: \.self) { itemIndex in
+                            SettingGroupView(group: $settingsData.groupFirst[itemIndex])
+                        }
                     }
+                    Section(header: Text("header").font(.system(.caption)).foregroundColor(.clear)) {
+                        ForEach(settingsData.groupSecond.indices, id: \.self) { itemIndex in
+                            SettingGroupView(group: $settingsData.groupSecond[itemIndex])
+                        }
+                    }
+                    Section(header: Text("header").font(.system(.caption)).foregroundColor(.clear)) {
+                        ForEach(settingsData.groupThird.indices, id: \.self) { itemIndex in
+                            SettingGroupView(group: $settingsData.groupThird[itemIndex])
+                        }
+                    }
+                    Spacer(minLength: 100)
                 }
             }
         }
-    }
-    func getIndex(item: Setting)-> Int{
-        
-        return settingsData.groupFirst.firstIndex { (item1) -> Bool in
-            return item.id == item1.id
-        } ?? 0
-    }
 }
 
 struct SettingsView_Previews: PreviewProvider {
