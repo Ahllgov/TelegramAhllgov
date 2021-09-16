@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7097126526E38AC100B93479 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097126426E38AC000B93479 /* ContactsView.swift */; };
 		7097126726E38EB400B93479 /* ItemViewContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097126626E38EB400B93479 /* ItemViewContacts.swift */; };
+		70E7E7A126F2017300F34B86 /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E7E7A026F2017300F34B86 /* AddContactView.swift */; };
 		70FF5D5126DD0D9500825CC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF5D5026DD0D9500825CC2 /* AppDelegate.swift */; };
 		70FF5D5326DD0D9500825CC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF5D5226DD0D9500825CC2 /* SceneDelegate.swift */; };
 		70FF5D5526DD0D9500825CC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF5D5426DD0D9500825CC2 /* ContentView.swift */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		7097126426E38AC000B93479 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		7097126626E38EB400B93479 /* ItemViewContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewContacts.swift; sourceTree = "<group>"; };
+		70E7E7A026F2017300F34B86 /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
 		70FF5D4D26DD0D9500825CC2 /* TelegramAhllgov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelegramAhllgov.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70FF5D5026DD0D9500825CC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70FF5D5226DD0D9500825CC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				70FF5D7826DD0E2D00825CC2 /* SettingGroupView.swift */,
 				7097126426E38AC000B93479 /* ContactsView.swift */,
 				7097126626E38EB400B93479 /* ItemViewContacts.swift */,
+				70E7E7A026F2017300F34B86 /* AddContactView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				70FF5D6D26DD0DE600825CC2 /* Setting.swift in Sources */,
 				70FF5D7926DD0E2D00825CC2 /* SettingGroupView.swift in Sources */,
 				70FF5D7526DD0E1600825CC2 /* ItemView.swift in Sources */,
+				70E7E7A126F2017300F34B86 /* AddContactView.swift in Sources */,
 				70FF5D7126DD0E0400825CC2 /* SettingViewModel.swift in Sources */,
 				70FF5D5826DD0D9500825CC2 /* TelegramAhllgov.xcdatamodeld in Sources */,
 				70FF5D6B26DD0DDF00825CC2 /* User.swift in Sources */,
