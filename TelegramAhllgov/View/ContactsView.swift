@@ -61,7 +61,8 @@ struct ContactsView: View {
                     AddContactView()
                 })
             }
-        }.padding(.vertical,-100)
+            .padding(.top, -100)
+        }
     }
     func getIndex(item: User)-> Int{
         
